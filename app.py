@@ -14,7 +14,8 @@ def user():
     return {
         "code": "200",
         "msg": '获取成功',
-        "name": '肖佳明'
+        "name": '肖佳明',
+        "age": 31
     }
 
 
