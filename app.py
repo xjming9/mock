@@ -19,7 +19,7 @@ def user():
     }
 
 
-@app.route('/getUserById',method=['post'])
+@app.route('/getUserById',methods=['post'])
 def user1():
     id = request.arg.get('id')
     if id == "1":
