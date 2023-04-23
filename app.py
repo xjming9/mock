@@ -22,7 +22,7 @@ def user():
 @app.route('/getUserById',methods=['post'])
 def user1():
     id = request.json['id']
-    if id == 1:
+    if id in [1, 40, 99]:
         return {
             "code": "500",
             "msg": '获取失败'
