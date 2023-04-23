@@ -21,8 +21,8 @@ def user():
 
 @app.route('/getUserById',methods=['post'])
 def user1():
-    id = request.arg.get('id')
-    if id == "1":
+    id = request.json['id']
+    if id == 1:
         return {
         "code": "200",
         "msg": '获取成功',
