@@ -24,15 +24,16 @@ def user1():
     id = request.json['id']
     if id == 1:
         return {
-        "code": "200",
-        "msg": '获取成功',
-        "name": '肖佳明',
-        "age": 31
-    }
-    else:
-        return {
             "code": "500",
             "msg": '获取失败'
+        }
+    else:
+        return {
+            "code": "200",
+            "msg": '获取成功',
+            "name": '肖佳明',
+            "age": 31,
+            "id": id
         }
         
     
